@@ -4,13 +4,10 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        int size = 1_000_000;
 //        int[] array;
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] array = new int[size];
 
-        for (int item : array) {
-            item *= 2;
-        }
-
-        for (int item : array) {
-            System.out.print(item + " ");
+        for (int i = 0; i < size; i++) {
+            array[i] = i;
         }
